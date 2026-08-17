@@ -1,0 +1,16 @@
+{
+  "sqltools.connections": [
+    {
+      "name": "Local MySQL",
+      "driver": "MySQL",
+      "previewLimit": 50,
+      "server": "127.0.0.1",
+      "port": 3306,
+      "database": "test",
+      "username": "root",
+      "password": "password",
+      "askForPassword": false
+    }
+  ],
+  "sqltools.useNodeRuntime": true
+}
