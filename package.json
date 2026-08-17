@@ -1,5 +1,5 @@
-"homepage": "https://shivambawne6-spec.github.io/SheRiseAI"
 {
+  "homepage": "https://shivambawne6-spec.github.io/SheRiseAI",
   "name": "sherise-hub",
   "private": true,
   "version": "0.0.0",
@@ -7,7 +7,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "axios": "^1.12.2",
@@ -17,6 +18,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^5.0.0",
+    "gh-pages": "^6.3.0",
     "vite": "^7.1.2"
   }
 }
