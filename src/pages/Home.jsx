@@ -25,7 +25,7 @@ export default function Home() {
 
           <div className="heroButtons">
             <button className="primary">Explore Now</button>
-            <button className="secondary" background-color="red"><a href="/sos">Emergency SOS</a></button>
+            
           </div>
 
         </div>
