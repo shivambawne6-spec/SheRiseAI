@@ -1,0 +1,340 @@
+.sos-page {
+  min-height: 100vh;
+  background: #f8f6ff;
+  color: #241b35;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.sos-hero {
+  position: relative;
+  overflow: hidden;
+  padding: 55px 7vw 70px;
+  background:
+    radial-gradient(circle at 85% 15%, #ff7a8b 0, transparent 28%),
+    linear-gradient(135deg, #4c1d95 0%, #7e22ce 55%, #be185d 100%);
+  color: #fff;
+}
+.sos-hero:after {
+  content: "";
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  border: 70px solid rgba(255, 255, 255, 0.06);
+  border-radius: 50%;
+  right: -120px;
+  bottom: -200px;
+}
+.sos-hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 760px;
+}
+.sos-back {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  margin-bottom: 38px;
+  opacity: 0.9;
+}
+.sos-badge {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+.sos-hero h1 {
+  font-size: clamp(46px, 7vw, 82px);
+  line-height: 0.95;
+  margin: 18px 0;
+}
+.sos-hero h1 span {
+  color: #ffe047;
+}
+.sos-hero p {
+  font-size: 18px;
+  line-height: 1.7;
+  max-width: 650px;
+  color: rgba(255, 255, 255, 0.88);
+}
+.sos-actions {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.sos-main-button,
+.sos-call-112 {
+  min-height: 62px;
+  border-radius: 16px;
+  padding: 0 26px;
+  font-size: 17px;
+  font-weight: 900;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.sos-main-button {
+  border: 3px solid rgba(255, 255, 255, 0.75);
+  background: #fff;
+  color: #b91c1c;
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.25);
+  transition: 0.2s;
+}
+.sos-main-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.3);
+}
+.sos-main-button.active {
+  background: #fee2e2;
+  color: #991b1b;
+}
+.sos-icon {
+  font-size: 25px;
+}
+.sos-call-112 {
+  background: #dc2626;
+  color: #fff;
+  border: 2px solid #fff;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+.sos-message {
+  margin-top: 18px;
+  padding: 14px 16px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  max-width: 680px;
+}
+.sos-status-card {
+  position: absolute;
+  z-index: 2;
+  right: 7vw;
+  bottom: 70px;
+  width: 300px;
+  background: #fff;
+  color: #2b203b;
+  padding: 20px;
+  border-radius: 18px;
+  box-shadow: 0 18px 50px rgba(28, 8, 55, 0.28);
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 12px;
+  align-items: center;
+}
+.sos-status-card .status-dot {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #f59e0b;
+  box-shadow: 0 0 0 6px #fef3c7;
+}
+.sos-status-card .status-dot.ready {
+  background: #16a34a;
+  box-shadow: 0 0 0 6px #dcfce7;
+}
+.sos-status-card strong {
+  display: block;
+  font-size: 14px;
+}
+.sos-status-card p {
+  font-size: 13px;
+  color: #6b6076;
+  margin-top: 4px;
+}
+.sos-status-card button {
+  grid-column: 1/-1;
+  border: 0;
+  background: #f3e8ff;
+  color: #6d28d9;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 800;
+  cursor: pointer;
+}
+.sos-content {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 70px 25px;
+}
+.sos-section-heading {
+  text-align: center;
+  margin-bottom: 35px;
+}
+.sos-section-heading > span {
+  color: #7c3aed;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 1.6px;
+}
+.sos-section-heading h2 {
+  font-size: 38px;
+  margin: 10px 0;
+}
+.sos-section-heading p {
+  color: #6b6076;
+}
+.emergency-number-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+.emergency-number-card {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  background: #fff;
+  padding: 24px;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(50, 20, 80, 0.08);
+  border: 1px solid #eee7f7;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 14px;
+  align-items: center;
+  transition: 0.2s;
+}
+.emergency-number-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 35px rgba(50, 20, 80, 0.13);
+}
+.number-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: #fff1f2;
+  display: grid;
+  place-items: center;
+  font-size: 24px;
+}
+.emergency-number-card h3 {
+  font-size: 17px;
+}
+.emergency-number-card p {
+  font-size: 13px;
+  color: #756b80;
+  line-height: 1.4;
+  margin-top: 4px;
+}
+.emergency-number-card > strong {
+  grid-column: 1/-1;
+  font-size: 30px;
+  color: #b91c1c;
+}
+.sos-tools-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+  margin-top: 25px;
+}
+.sos-tool-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 28px;
+  box-shadow: 0 10px 30px rgba(50, 20, 80, 0.08);
+  border: 1px solid #eee7f7;
+}
+.tool-icon {
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+.sos-tool-card h3 {
+  font-size: 23px;
+  margin-bottom: 8px;
+}
+.sos-tool-card > p {
+  color: #6b6076;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.sos-secondary-button,
+.sos-outline-button {
+  border: 0;
+  border-radius: 11px;
+  padding: 12px 16px;
+  font-weight: 800;
+  cursor: pointer;
+}
+.sos-secondary-button {
+  background: #6d28d9;
+  color: #fff;
+}
+.sos-outline-button {
+  background: #fff;
+  color: #6d28d9;
+  border: 1px solid #c4b5fd;
+}
+.map-link {
+  display: inline-block;
+  margin-left: 12px;
+  color: #6d28d9;
+  font-weight: 800;
+  text-decoration: none;
+}
+.trusted-sos-form {
+  display: grid;
+  gap: 10px;
+}
+.trusted-sos-form input {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #ddd4e8;
+  border-radius: 10px;
+  outline: none;
+  font-size: 15px;
+}
+.trusted-sos-form input:focus {
+  border-color: #8b5cf6;
+  box-shadow: 0 0 0 3px #ede9fe;
+}
+.contact-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 4px;
+}
+.safety-note {
+  margin-top: 28px;
+  padding: 18px 20px;
+  border-radius: 14px;
+  background: #fff7ed;
+  border: 1px solid #fed7aa;
+  color: #7c2d12;
+  line-height: 1.6;
+  font-size: 14px;
+}
+.safety-note a {
+  color: #991b1b;
+  font-weight: 900;
+}
+@media (max-width: 900px) {
+  .sos-status-card {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    margin-top: 35px;
+    width: 100%;
+    max-width: 430px;
+  }
+  .emergency-number-grid {
+    grid-template-columns: 1fr;
+  }
+  .sos-tools-grid {
+    grid-template-columns: 1fr;
+  }
+  .sos-hero {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .sos-content {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}

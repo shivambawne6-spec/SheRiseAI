@@ -111,3 +111,20 @@
 ::-webkit-scrollbar-thumb:hover {
   background: var(--secondary-purple);
 }
+
+.login{
+  background-color: blue;
+  color : white;
+  padding :10px 20px 10px 20px;
+  border:2px solid black;
+  border-radius: 10px; 
+  text-align: center;
+}
+
+.login-btn{
+  color:white;
+}
+.navbar-logo{
+  height: 100px;
+  width: 100px;
+}

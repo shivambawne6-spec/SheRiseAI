@@ -7,6 +7,7 @@ import Skills from "./pages/Skills";
 import Schemes from "./pages/Schemes";
 import Contacts from "./pages/Contacts";
 import Jobs from "./pages/Jobs";
+import Safety from "./pages/Safety";
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
       <Route path="/schemes" element={<Schemes />} />
       <Route path="/contacts" element={<Contacts />} />
       <Route path="/jobs" element={<Jobs />} />
+      <Route path="/sos" element={<Safety />} />
     </Routes>
   );
 }

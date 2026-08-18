@@ -10,7 +10,7 @@ export default function Home() {
 
         <div className="heroText">
 
-          <span className="badge">Women Empowerment Platform</span>
+          
 
           <h1>
             Empowering Women Through
@@ -25,7 +25,7 @@ export default function Home() {
 
           <div className="heroButtons">
             <button className="primary">Explore Now</button>
-            <button className="secondary">Emergency SOS</button>
+            <button className="secondary" background-color="red"><a href="/sos">Emergency SOS</a></button>
           </div>
 
         </div>
@@ -70,7 +70,7 @@ export default function Home() {
         <div className="featureGrid">
 
           <div className="featureCard">
-            <h3>🛡 Women's Safety</h3>
+            <h3><a href="/skills">🛡 Women's Safety</a></h3>
             <p>
               One tap SOS with live GPS location,
               trusted contacts and emergency support.
@@ -78,7 +78,7 @@ export default function Home() {
           </div>
 
           <div className="featureCard">
-            <h3>💻 Technical Skills</h3>
+            <h3><a href="/sos">💻 Technical Skills</a></h3>
             <p>
               Learn C, C++, Java, Python, React,
               DSA and AI completely free.
@@ -86,7 +86,7 @@ export default function Home() {
           </div>
 
           <div className="featureCard">
-            <h3>💼 Job Opportunities</h3>
+            <h3><a href="/jobs">💼 Job Opportunities</a></h3>
             <p>
               Explore internships and fresher jobs
               across Maharashtra.
@@ -94,7 +94,7 @@ export default function Home() {
           </div>
 
           <div className="featureCard">
-            <h3>📚 Government Schemes</h3>
+            <h3><a href="//schemes">📚 Government Schemes</a></h3>
             <p>
               Find scholarships, women schemes,
               loans and financial benefits.
